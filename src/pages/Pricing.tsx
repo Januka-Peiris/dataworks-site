@@ -287,16 +287,6 @@ export default function Pricing() {
             <div className="space-y-6">
               <div className="bg-slate-50 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  How is DataWorks priced?
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  DataWorks pricing is customised based on your organisation's size, data volume, and
-                  requirements. Contact our sales team for a tailored quote.
-                </p>
-              </div>
-
-              <div className="bg-slate-50 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
                   Can I start with one tier and upgrade later?
                 </h3>
                 <p className="text-slate-600 leading-relaxed">

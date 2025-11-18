@@ -524,15 +524,6 @@ export default function Products() {
               </div>
             ))}
           </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              to="/contact"
-              className="inline-block text-emerald-600 font-semibold hover:text-emerald-700"
-            >
-              See all integrations →
-            </Link>
-          </div>
         </div>
       </section>
 

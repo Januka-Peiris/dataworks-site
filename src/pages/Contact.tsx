@@ -54,7 +54,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-yellow-500 focus:outline-none transition-colors"
                     placeholder="John Smith"
                   />
                 </div>
@@ -70,7 +70,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-yellow-500 focus:outline-none transition-colors"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-yellow-500 focus:outline-none transition-colors"
                     placeholder="Your Company"
                   />
                 </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-emerald-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-slate-200 rounded-lg focus:border-yellow-500 focus:outline-none transition-colors"
                     placeholder="+44 20 1234 5678"
                   />
                 </div>
@@ -121,13 +121,13 @@ export default function Contact() {
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-emerald-600 transition-colors flex items-center justify-center gap-2"
-                >
-                  Send Message
-                  <Send className="w-5 h-5" />
-                </button>
+                    <button
+                      type="submit"
+                      className="w-full bg-yellow-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors flex items-center justify-center gap-2"
+                    >
+                      Send Message
+                      <Send className="w-5 h-5" />
+                    </button>
               </form>
             </div>
 
@@ -185,13 +185,13 @@ export default function Contact() {
               <div className="mt-12 pt-12 border-t border-slate-200">
                 <h3 className="font-semibold text-slate-900 mb-4">Quick Links</h3>
                 <div className="space-y-3">
-                  <a href="/products" className="block text-emerald-600 hover:text-emerald-700">
+                  <a href="/products" className="block text-yellow-600 hover:text-yellow-700">
                     Explore Products →
                   </a>
-                  <a href="/pricing" className="block text-emerald-600 hover:text-emerald-700">
+                  <a href="/pricing" className="block text-yellow-600 hover:text-yellow-700">
                     View Pricing →
                   </a>
-                  <a href="/case-studies" className="block text-emerald-600 hover:text-emerald-700">
+                  <a href="/case-studies" className="block text-yellow-600 hover:text-yellow-700">
                     Read Case Studies →
                   </a>
                 </div>

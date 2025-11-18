@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import Solutions from './pages/Solutions';
 import Pricing from './pages/Pricing';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudyDetail from './pages/CaseStudyDetail';
@@ -14,10 +15,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/pricing" element={<Pricing />} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/solutions" element={<Solutions />} />
+              <Route path="/pricing" element={<Pricing />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
         <Route path="/about" element={<About />} />

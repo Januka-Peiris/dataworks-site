@@ -1,4 +1,5 @@
 import { Database, TrendingUp, Sparkles, Check } from 'lucide-react';
+import Tag, { TagTheme } from './Tag';
 
 const tiers = [
   {
@@ -11,17 +12,17 @@ const tiers = [
     bgColor: 'bg-blue-500/5',
     icon: Database,
     capabilities: [
-      'Single source of truth',
-      'Certified KPIs and definitions',
-      'Automated data quality checks',
-      'Reconciliations & lineage',
-      'Standardised semantic layer',
+      { text: 'Connect all your data sources — CRM, finance, marketing, operations', tags: ['trust' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Single source of truth with certified KPIs everyone trusts', tags: ['trust' as TagTheme, 'control' as TagTheme] },
+      { text: 'Automated quality checks catch issues before they reach executives', tags: ['trust' as TagTheme, 'speed' as TagTheme, 'security' as TagTheme] },
+      { text: 'Complete lineage & reconciliations for audit-ready reporting', tags: ['trust' as TagTheme, 'control' as TagTheme] },
+      { text: 'Self-service dashboards for business users — no coding required', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
     ],
     outcomes: [
-      'Faster reporting cycles',
-      'Trusted dashboards',
-      'Aligned metrics across teams',
-      'Eliminated reporting chaos',
+      'Reports in minutes, not weeks',
+      'Everyone speaks the same data language',
+      'Eliminate reporting chaos',
+      'Pass audits with confidence',
     ],
   },
   {
@@ -34,17 +35,17 @@ const tiers = [
     bgColor: 'bg-emerald-500/5',
     icon: TrendingUp,
     capabilities: [
-      'Driver modelling & assumption libraries',
-      'Scenario simulation',
-      'Predictive re-forecasting',
-      'Variance logic',
-      'Reusable intelligence templates',
+      { text: 'Run what-if scenarios to predict business outcomes before committing', tags: ['insight' as TagTheme, 'intelligence' as TagTheme] },
+      { text: 'Driver-based modeling shows exactly what influences your metrics', tags: ['insight' as TagTheme] },
+      { text: 'Predictive re-forecasting adapts to changing conditions automatically', tags: ['insight' as TagTheme, 'intelligence' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Variance analysis explains performance gaps instantly', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Reusable intelligence templates for consistent analysis', tags: ['insight' as TagTheme, 'speed' as TagTheme, 'control' as TagTheme] },
     ],
     outcomes: [
-      'Faster planning cycles',
-      'Transparent logic',
-      'Clear performance drivers',
-      'Proactive decision making',
+      'Make better decisions faster',
+      'Understand performance drivers',
+      'Plan with confidence',
+      'Spot trends before competitors',
     ],
   },
   {
@@ -57,17 +58,17 @@ const tiers = [
     bgColor: 'bg-yellow-500/5',
     icon: Sparkles,
     capabilities: [
-      'AI guardrails & policy enforcement',
-      'Governed prompt inputs',
-      'Full data lineage',
-      'Access controls',
-      'ML-ready data products',
+      { text: 'Deploy AI safely with built-in guardrails and policy enforcement', tags: ['intelligence' as TagTheme, 'security' as TagTheme, 'control' as TagTheme] },
+      { text: 'Governed prompt inputs ensure consistent, trustworthy AI results', tags: ['intelligence' as TagTheme, 'trust' as TagTheme, 'security' as TagTheme] },
+      { text: 'Complete lineage tracks AI decisions for full transparency', tags: ['trust' as TagTheme, 'control' as TagTheme, 'security' as TagTheme] },
+      { text: 'Role-based access controls protect sensitive data at every level', tags: ['security' as TagTheme, 'control' as TagTheme] },
+      { text: 'ML-ready data products accelerate model development', tags: ['intelligence' as TagTheme, 'speed' as TagTheme] },
     ],
     outcomes: [
-      'Confident AI adoption',
-      'Automated insights & workflows',
-      'Reduced risk',
-      'Scalable intelligence',
+      'Scale AI confidently',
+      'Automate insights & workflows',
+      'Reduce regulatory risk',
+      'Gain competitive advantage',
     ],
   },
 ];
@@ -112,11 +113,20 @@ export default function ProductTiers() {
                   <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-4">
                     Capabilities
                   </h4>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     {tier.capabilities.map((capability, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <Check className={`w-5 h-5 ${tier.color === 'blue' ? 'text-blue-500' : tier.color === 'emerald' ? 'text-emerald-500' : 'text-yellow-500'} flex-shrink-0 mt-0.5`} />
-                        <span className="text-slate-700 text-sm leading-relaxed">{capability}</span>
+                        <div className="flex-1">
+                          <span className="text-slate-700 text-sm leading-relaxed block mb-2">
+                            {capability.text}
+                          </span>
+                          <div className="flex flex-wrap gap-1">
+                            {capability.tags.map((tag, tagIndex) => (
+                              <Tag key={tagIndex} theme={tag} size="sm" />
+                            ))}
+                          </div>
+                        </div>
                       </li>
                     ))}
                   </ul>

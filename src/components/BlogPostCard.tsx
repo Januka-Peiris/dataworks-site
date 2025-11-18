@@ -35,7 +35,7 @@ export default function BlogPostCard({
           </span>
         )}
 
-        <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+        <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-yellow-600 transition-colors">
           {title}
         </h3>
 
@@ -52,7 +52,7 @@ export default function BlogPostCard({
           </div>
         </div>
 
-        <div className="flex items-center gap-2 text-emerald-600 font-semibold group-hover:gap-4 transition-all">
+        <div className="flex items-center gap-2 text-yellow-600 font-semibold group-hover:gap-4 transition-all">
           Read More
           <ArrowRight className="w-5 h-5" />
         </div>

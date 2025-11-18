@@ -86,19 +86,19 @@ export default function CaseStudies() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-2">75%</div>
+              <div className="text-5xl font-bold text-yellow-600 mb-2">75%</div>
               <div className="text-slate-600">Faster Time to Value</div>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-2">99%</div>
+              <div className="text-5xl font-bold text-yellow-600 mb-2">99%</div>
               <div className="text-slate-600">Data Accuracy</div>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-2">65%</div>
+              <div className="text-5xl font-bold text-yellow-600 mb-2">65%</div>
               <div className="text-slate-600">Lower Costs</div>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="text-5xl font-bold text-emerald-600 mb-2">100%</div>
+              <div className="text-5xl font-bold text-yellow-600 mb-2">100%</div>
               <div className="text-slate-600">Client Satisfaction</div>
             </div>
           </div>

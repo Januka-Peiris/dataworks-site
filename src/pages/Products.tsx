@@ -3,7 +3,9 @@ import ProductTiers from '../components/ProductTiers';
 import ComparisonTable from '../components/ComparisonTable';
 import Journey from '../components/Journey';
 import CTABanner from '../components/CTABanner';
-import { Database, TrendingUp, Sparkles, CheckCircle, ArrowRight, Users, Building, Cpu } from 'lucide-react';
+import PillarLegend from '../components/PillarLegend';
+import Tag from '../components/Tag';
+import { Database, TrendingUp, Sparkles, CheckCircle, ArrowRight, Users, Building, Cpu, Plug, DollarSign, Zap, Shield, BarChart3, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Products() {
@@ -125,6 +127,122 @@ export default function Products() {
 
       <ProductTiers />
 
+      {/* Platform Capabilities Section */}
+      <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              How DataWorks Delivers Value
+            </h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Powerful capabilities that turn your data into a competitive advantage
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Data Integration */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Plug className="w-7 h-7 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Connect Any Data Source</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Plug into your CRM, ERP, finance systems, marketing tools, and more. No data silo left behind.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="speed" size="sm" />
+                <Tag theme="control" size="sm" />
+              </div>
+            </div>
+
+            {/* Cost Optimization */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
+                <DollarSign className="w-7 h-7 text-emerald-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Complete Cost Visibility</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                See exactly where every pound of your data budget goes, with intelligent optimization recommendations.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="insight" size="sm" />
+                <Tag theme="control" size="sm" />
+              </div>
+            </div>
+
+            {/* API Creation */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Code className="w-7 h-7 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Build Data APIs Instantly</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Expose trusted data to any system without coding. Enable integration without developer bottlenecks.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="speed" size="sm" />
+                <Tag theme="trust" size="sm" />
+              </div>
+            </div>
+
+            {/* Data Quality */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Shield className="w-7 h-7 text-purple-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Automated Quality Checks</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Catch data issues before they reach executives. Continuous monitoring ensures trust at every level.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="trust" size="sm" />
+                <Tag theme="security" size="sm" />
+              </div>
+            </div>
+
+            {/* Self-Service Dashboards */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-orange-500/20 rounded-xl flex items-center justify-center mb-6">
+                <BarChart3 className="w-7 h-7 text-orange-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Self-Service Analytics</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Business users create their own reports and dashboards. Free your data team from endless ad-hoc requests.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="speed" size="sm" />
+                <Tag theme="insight" size="sm" />
+              </div>
+            </div>
+
+            {/* Performance */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all">
+              <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="w-7 h-7 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Lightning-Fast Queries</h3>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                Get answers in seconds, not hours. Optimized infrastructure means faster decisions across the board.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Tag theme="speed" size="sm" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 bg-yellow-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-600 transition-colors"
+            >
+              Schedule a Demo <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <PillarLegend />
+
       {/* Use Cases Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -152,19 +270,36 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-blue-200">
                   <div className="font-semibold text-slate-900 mb-2">Executive Dashboards</div>
-                  <div className="text-sm text-slate-600">Real-time KPIs everyone trusts</div>
+                  <div className="text-sm text-slate-600 mb-3">Real-time KPIs everyone trusts</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="trust" size="sm" />
+                    <Tag theme="insight" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-200">
                   <div className="font-semibold text-slate-900 mb-2">Financial Reporting</div>
-                  <div className="text-sm text-slate-600">Automated reconciliations & controls</div>
+                  <div className="text-sm text-slate-600 mb-3">Automated reconciliations & controls</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="trust" size="sm" />
+                    <Tag theme="control" size="sm" />
+                    <Tag theme="speed" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-200">
                   <div className="font-semibold text-slate-900 mb-2">Operational Analytics</div>
-                  <div className="text-sm text-slate-600">Monitor performance across teams</div>
+                  <div className="text-sm text-slate-600 mb-3">Monitor performance across teams</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="insight" size="sm" />
+                    <Tag theme="control" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-200">
                   <div className="font-semibold text-slate-900 mb-2">Customer Analytics</div>
-                  <div className="text-sm text-slate-600">Unified view of customer data</div>
+                  <div className="text-sm text-slate-600 mb-3">Unified view of customer data</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="trust" size="sm" />
+                    <Tag theme="insight" size="sm" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,19 +318,34 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-emerald-200">
                   <div className="font-semibold text-slate-900 mb-2">Budget Planning</div>
-                  <div className="text-sm text-slate-600">Scenario modeling & forecasting</div>
+                  <div className="text-sm text-slate-600 mb-3">Scenario modeling & forecasting</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="insight" size="sm" />
+                    <Tag theme="intelligence" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-emerald-200">
                   <div className="font-semibold text-slate-900 mb-2">Sales Performance</div>
-                  <div className="text-sm text-slate-600">Driver-based analysis of revenue</div>
+                  <div className="text-sm text-slate-600 mb-3">Driver-based analysis of revenue</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="insight" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-emerald-200">
                   <div className="font-semibold text-slate-900 mb-2">Cost Optimization</div>
-                  <div className="text-sm text-slate-600">Identify cost drivers & savings</div>
+                  <div className="text-sm text-slate-600 mb-3">Identify cost drivers & savings</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="insight" size="sm" />
+                    <Tag theme="speed" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-emerald-200">
                   <div className="font-semibold text-slate-900 mb-2">Demand Forecasting</div>
-                  <div className="text-sm text-slate-600">Predict future trends & needs</div>
+                  <div className="text-sm text-slate-600 mb-3">Predict future trends & needs</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="insight" size="sm" />
+                    <Tag theme="intelligence" size="sm" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,19 +364,35 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4 border border-yellow-200">
                   <div className="font-semibold text-slate-900 mb-2">Anomaly Detection</div>
-                  <div className="text-sm text-slate-600">Automatically spot unusual patterns</div>
+                  <div className="text-sm text-slate-600 mb-3">Automatically spot unusual patterns</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="intelligence" size="sm" />
+                    <Tag theme="security" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-yellow-200">
                   <div className="font-semibold text-slate-900 mb-2">Predictive Maintenance</div>
-                  <div className="text-sm text-slate-600">Prevent issues before they happen</div>
+                  <div className="text-sm text-slate-600 mb-3">Prevent issues before they happen</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="intelligence" size="sm" />
+                    <Tag theme="insight" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-yellow-200">
                   <div className="font-semibold text-slate-900 mb-2">Customer Churn</div>
-                  <div className="text-sm text-slate-600">Predict & prevent customer loss</div>
+                  <div className="text-sm text-slate-600 mb-3">Predict & prevent customer loss</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="intelligence" size="sm" />
+                    <Tag theme="insight" size="sm" />
+                  </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-yellow-200">
                   <div className="font-semibold text-slate-900 mb-2">Process Automation</div>
-                  <div className="text-sm text-slate-600">AI-powered workflow automation</div>
+                  <div className="text-sm text-slate-600 mb-3">AI-powered workflow automation</div>
+                  <div className="flex flex-wrap gap-1">
+                    <Tag theme="intelligence" size="sm" />
+                    <Tag theme="speed" size="sm" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,17 +415,11 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
               <div className="text-3xl font-bold text-emerald-400 mb-2">99.9%</div>
               <div className="font-semibold mb-2">Uptime SLA</div>
               <div className="text-sm text-slate-400">Always available when you need it</div>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">SOC 2</div>
-              <div className="font-semibold mb-2">Compliant</div>
-              <div className="text-sm text-slate-400">Enterprise security standards</div>
             </div>
 
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">

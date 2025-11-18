@@ -54,7 +54,7 @@ export default function TechStack() {
           </div>
 
           <div className="mt-12 pt-12 border-t border-white/20">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-3xl font-bold text-white mb-2">100%</div>
                 <div className="text-slate-400 text-sm">Managed</div>
@@ -62,10 +62,6 @@ export default function TechStack() {
               <div>
                 <div className="text-3xl font-bold text-white mb-2">24/7</div>
                 <div className="text-slate-400 text-sm">Monitoring</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white mb-2">SOC 2</div>
-                <div className="text-slate-400 text-sm">Compliant</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-white mb-2">99.9%</div>

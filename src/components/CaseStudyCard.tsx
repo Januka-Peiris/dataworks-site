@@ -46,7 +46,7 @@ export default function CaseStudyCard({
         </div>
       </div>
 
-      <div className="flex items-center gap-2 text-emerald-600 font-semibold group-hover:gap-4 transition-all">
+      <div className="flex items-center gap-2 text-yellow-600 font-semibold group-hover:gap-4 transition-all">
         Read Case Study
         <ArrowRight className="w-5 h-5" />
       </div>

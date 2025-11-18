@@ -20,6 +20,24 @@ const comparisonData = [
     ai: 'AI risk, unreliable inputs, lack of lineage/control, difficulty scaling AI safely.',
   },
   {
+    category: 'Data Source Connectivity',
+    bi: 'Connect CRM, ERP, finance, marketing, operations — all standard business systems.',
+    mi: 'All BI sources plus planning tools, forecasting systems, and driver databases.',
+    ai: 'All MI sources plus ML platforms, feature stores, and real-time event streams.',
+  },
+  {
+    category: 'Cost Optimization',
+    bi: 'See exactly where data budget goes. Optimize query costs and storage spend.',
+    mi: 'Model cost drivers. Predict budget impact of scenarios and forecast resource needs.',
+    ai: 'Monitor ML compute costs. Optimize inference spend. Track ROI per AI use case.',
+  },
+  {
+    category: 'API Development',
+    bi: 'Create data APIs without coding. Expose trusted metrics to any system instantly.',
+    mi: 'Build forecast APIs. Expose scenario results. Share driver models programmatically.',
+    ai: 'Deploy ML models as APIs. Manage versioning. Monitor model performance in production.',
+  },
+  {
     category: 'Data Foundation',
     bi: 'Standardised semantic layer with aligned definitions and metrics.',
     mi: 'Advanced modelling layer with drivers, assumptions, causality, and scenarios.',
@@ -30,6 +48,18 @@ const comparisonData = [
     bi: 'Automated cleansing, validation, reconciliations, and quality scoring.',
     mi: 'Variance logic, assumption management, driver libraries, scenario governance.',
     ai: 'End-to-end lineage, audit trails, data contracts, policy enforcement, access governance.',
+  },
+  {
+    category: 'Self-Service Capabilities',
+    bi: 'Business users create dashboards and reports. No coding required.',
+    mi: 'Analysts run what-if scenarios. Explore driver impacts. Build forecasts independently.',
+    ai: 'Data scientists deploy models safely. Experiment with guardrails. Monitor in production.',
+  },
+  {
+    category: 'Team Collaboration',
+    bi: 'Shared dashboards. Centralized metrics. Everyone sees the same numbers.',
+    mi: 'Shared assumptions. Version-controlled scenarios. Collaborative planning workflows.',
+    ai: 'Model registry. Experiment tracking. Team-wide visibility into AI deployments.',
   },
   {
     category: 'Key Features',

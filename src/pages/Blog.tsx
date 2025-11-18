@@ -66,7 +66,7 @@ export default function Blog() {
           {/* Featured Post */}
           <div className="mb-16">
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-12 md:p-16">
-              <span className="inline-block bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
+              <span className="inline-block bg-yellow-500 text-slate-900 text-sm font-semibold px-4 py-2 rounded-full mb-6">
                 Featured
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -99,9 +99,9 @@ export default function Blog() {
               We're working on comprehensive guides, case studies, and insights. Subscribe to our
               newsletter to be notified when new content is published.
             </p>
-            <button className="bg-emerald-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors">
-              Subscribe to Newsletter
-            </button>
+                <button className="bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+                  Subscribe to Newsletter
+                </button>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Blog() {
               (category) => (
                 <button
                   key={category}
-                  className="bg-white border-2 border-slate-200 rounded-lg px-4 py-3 text-center font-semibold text-slate-900 hover:border-emerald-500 hover:text-emerald-600 transition-colors"
+                  className="bg-white border-2 border-slate-200 rounded-lg px-4 py-3 text-center font-semibold text-slate-900 hover:border-yellow-500 hover:text-yellow-600 transition-colors"
                 >
                   {category}
                 </button>

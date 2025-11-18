@@ -148,9 +148,15 @@ export default function CaseStudyDetail() {
 
   return (
     <>
-      {/* Header */}
-      <div className="bg-slate-900 text-white py-24 pt-32">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* Hero Section - Dark background like Assured */}
+      <div className="relative bg-slate-900 text-white py-32 pt-40 overflow-hidden">
+        {/* Decorative circles background */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 right-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-20 w-80 h-80 bg-yellow-500/20 rounded-full blur-3xl" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-6">
           <Link
             to="/case-studies"
             className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-8 transition-colors"
@@ -159,67 +165,124 @@ export default function CaseStudyDetail() {
             Back to Case Studies
           </Link>
 
-          <div className="mb-4">
-            <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 text-sm font-medium">
-              {study.industry}
+          {/* Case Study Badge */}
+          <div className="mb-8">
+            <span className="inline-block bg-slate-700/50 backdrop-blur-sm border border-slate-600 rounded-lg px-6 py-3 text-sm font-medium uppercase tracking-wide">
+              Case Study
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">{study.company}</h1>
-          <p className="text-2xl text-slate-300 max-w-3xl">{study.tagline}</p>
+          {/* Main Headline */}
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 max-w-4xl leading-tight">
+            {study.tagline}
+          </h1>
+
+          {/* Problem Statement */}
+          <div className="max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
+              {study.challenge.split('.')[0]}.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Results Banner */}
-      <section className="py-16 bg-emerald-500">
+      {/* About Client Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+            <div className="flex-1">
+              <h2 className="text-4xl font-bold text-slate-900 mb-6">About {study.company}</h2>
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">{study.overview}</p>
+              <div className="inline-block bg-slate-100 rounded-full px-6 py-2 text-sm font-medium text-slate-700">
+                {study.industry}
+              </div>
+            </div>
+            {/* Placeholder for client logo - you can add actual logos later */}
+            <div className="w-64 h-32 bg-slate-100 rounded-xl flex items-center justify-center">
+              <span className="text-2xl font-bold text-slate-400">{study.company}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenge Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge</h2>
+          <p className="text-lg text-slate-600 leading-relaxed">{study.challenge}</p>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Our Approach</h2>
+          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            We delivered a comprehensive DataWorks solution tailored to {study.company}'s unique needs:
+          </p>
+          <ul className="space-y-4">
+            {study.solution.map((item: string, index: number) => (
+              <li key={index} className="flex items-start gap-4 group">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-white font-bold mt-1">
+                  {index + 1}
+                </div>
+                <span className="text-lg text-slate-600 leading-relaxed pt-1">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-4 text-center">The Results</h2>
+          <p className="text-xl text-slate-300 text-center mb-12 max-w-3xl mx-auto">
+            {study.company} achieved measurable, transformative results
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {study.results.map((result: any, index: number) => (
-              <div key={index}>
-                <div className="text-5xl font-bold mb-2">{result.value}</div>
-                <div className="text-emerald-100 font-semibold mb-1">{result.metric}</div>
-                <div className="text-sm text-emerald-200">{result.description}</div>
+              <div key={index} className="text-center">
+                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8">
+                  <div className="text-5xl font-bold text-yellow-500 mb-3">{result.value}</div>
+                  <div className="text-lg font-semibold text-white mb-2">{result.metric}</div>
+                  <div className="text-sm text-slate-400">{result.description}</div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Content */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Overview</h2>
-            <p className="text-lg text-slate-600 leading-relaxed">{study.overview}</p>
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">The Challenge</h2>
-            <p className="text-lg text-slate-600 leading-relaxed">{study.challenge}</p>
-          </div>
-
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">The Solution</h2>
-            <ul className="space-y-4">
-              {study.solution.map((item: string, index: number) => (
-                <li key={index} className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-600 leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {study.testimonial && (
-            <div className="bg-slate-50 rounded-2xl p-12 border-l-4 border-emerald-500">
-              <p className="text-2xl text-slate-700 leading-relaxed mb-6 italic">
-                "{study.testimonial.quote}"
-              </p>
-              <p className="text-slate-600 font-semibold">— {study.testimonial.author}</p>
+      {/* Testimonial Section */}
+      {study.testimonial && (
+        <section className="py-20 bg-slate-50">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="bg-white rounded-2xl p-12 shadow-lg border-l-4 border-yellow-500">
+              <div className="flex flex-col gap-6">
+                <svg className="w-12 h-12 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+                <p className="text-2xl text-slate-700 leading-relaxed italic">
+                  {study.testimonial.quote}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center">
+                    <span className="text-slate-600 font-bold">
+                      {study.testimonial.author.split(',')[0].charAt(0)}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-slate-900 font-semibold">{study.testimonial.author}</p>
+                    <p className="text-sm text-slate-500">{study.company}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          )}
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
 
       <CTABanner
         title="Ready for Similar Results?"

@@ -59,17 +59,69 @@ export default function CaseStudies() {
   return (
     <>
       <PageHeader
-        subtitle="Success Stories"
-        title="See DataWorks in Action"
-        description="Discover how organisations across industries are transforming their data with DataWorks."
+        subtitle="Client Success Stories"
+        title="Real Results from Real Organisations"
+        description="See how organisations across industries are transforming their data with DataWorks. Each story represents measurable business impact and lasting change."
       />
 
+      {/* Main Case Studies Grid */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {caseStudies.map((study) => (
               <CaseStudyCard key={study.id} {...study} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why These Stories Matter */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 text-center">
+            Why These Stories Matter
+          </h2>
+          <p className="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-16">
+            Every organisation faces unique data challenges. These case studies show how DataWorks 
+            adapts to deliver exactly what each business needs—whether it's speed, trust, or insight.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Built for Trust</h3>
+              <p className="text-slate-600">
+                Every solution includes governance, lineage, and audit trails—so your data is always defensible.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Rapid Value</h3>
+              <p className="text-slate-600">
+                Our clients see results in weeks, not months—with solutions that scale as they grow.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Measurable Impact</h3>
+              <p className="text-slate-600">
+                From cost savings to faster decisions—every deployment delivers quantifiable business value.
+              </p>
+            </div>
           </div>
         </div>
       </section>

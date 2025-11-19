@@ -137,13 +137,13 @@ export default function Solutions() {
       />
 
       {/* Department Sections */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Your Department. Your Data. Your Way.
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Every department has unique data challenges. DataWorks delivers tailored solutions 
               while maintaining a single, unified platform.
             </p>
@@ -151,7 +151,7 @@ export default function Solutions() {
 
           <div className="space-y-20">
             {departments.map((dept, index) => (
-              <div key={index} className={`${index % 2 === 0 ? '' : 'bg-slate-50 -mx-6 px-6 py-12 rounded-3xl'}`}>
+              <div key={index} className={`${index % 2 === 0 ? '' : 'bg-secondary/30 -mx-6 px-6 py-12 rounded-3xl'}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Left: Header & Challenges */}
                   <div>
@@ -170,26 +170,26 @@ export default function Solutions() {
                         <dept.icon className="w-8 h-8 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-3xl font-bold text-slate-900">{dept.name}</h3>
-                        <p className="text-slate-600">{dept.description}</p>
+                        <h3 className="text-3xl font-bold text-foreground">{dept.name}</h3>
+                        <p className="text-muted-foreground">{dept.description}</p>
                       </div>
                     </div>
 
                     <div className="mb-6">
-                      <span className="inline-block bg-slate-900 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                      <span className="inline-block bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded-full">
                         Best for: {dept.tier}
                       </span>
                     </div>
 
                     <div className="mb-8">
-                      <h4 className="text-lg font-bold text-slate-900 mb-4">Common Challenges:</h4>
+                      <h4 className="text-lg font-bold text-foreground mb-4">Common Challenges:</h4>
                       <ul className="space-y-3">
                         {dept.challenges.map((challenge, i) => (
                           <li key={i} className="flex items-start gap-3">
-                            <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                              <span className="text-red-600 text-sm font-bold">✕</span>
+                            <div className="w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                              <span className="text-red-500 text-sm font-bold">✕</span>
                             </div>
-                            <span className="text-slate-600">{challenge}</span>
+                            <span className="text-muted-foreground">{challenge}</span>
                           </li>
                         ))}
                       </ul>
@@ -198,13 +198,13 @@ export default function Solutions() {
 
                   {/* Right: Solutions & Outcomes */}
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-4">How DataWorks Helps:</h4>
+                    <h4 className="text-lg font-bold text-foreground mb-4">How DataWorks Helps:</h4>
                     <ul className="space-y-4 mb-8">
                       {dept.solutions.map((solution, i) => (
                         <li key={i} className="flex items-start gap-3">
                           <CheckCircle className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" />
                           <div className="flex-1">
-                            <span className="text-slate-700 block mb-2">{solution.text}</span>
+                            <span className="text-foreground block mb-2">{solution.text}</span>
                             <div className="flex flex-wrap gap-1">
                               {solution.tags.map((tag, tagIndex) => (
                                 <Tag key={tagIndex} theme={tag as any} size="sm" />
@@ -215,11 +215,11 @@ export default function Solutions() {
                       ))}
                     </ul>
 
-                    <div className="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-6">
-                      <div className="text-sm font-semibold text-emerald-700 uppercase tracking-wide mb-2">
+                    <div className="bg-emerald-500/10 border-2 border-emerald-500/30 rounded-xl p-6">
+                      <div className="text-sm font-semibold text-emerald-500 uppercase tracking-wide mb-2">
                         Typical Results
                       </div>
-                      <p className="text-slate-900 font-semibold leading-relaxed">
+                      <p className="text-foreground font-semibold leading-relaxed">
                         {dept.outcomes}
                       </p>
                     </div>
@@ -232,44 +232,44 @@ export default function Solutions() {
       </section>
 
       {/* Cross-Department Benefits */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               One Platform. Zero Silos.
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               When every department uses DataWorks, the entire organisation benefits
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white border-2 border-slate-200 rounded-2xl p-8">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Building className="w-6 h-6 text-blue-600" />
+            <div className="bg-background border-2 border-border rounded-2xl p-8">
+              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                <Building className="w-6 h-6 text-blue-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Shared Metrics</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Shared Metrics</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Everyone speaks the same data language. No more conflicting reports or "version of truth" debates.
               </p>
             </div>
 
-            <div className="bg-white border-2 border-slate-200 rounded-2xl p-8">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6">
-                <TrendingUp className="w-6 h-6 text-emerald-600" />
+            <div className="bg-background border-2 border-border rounded-2xl p-8">
+              <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+                <TrendingUp className="w-6 h-6 text-emerald-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Cross-Functional Insights</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Cross-Functional Insights</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Connect the dots between departments. See how marketing impacts sales, how ops affects finance.
               </p>
             </div>
 
-            <div className="bg-white border-2 border-slate-200 rounded-2xl p-8">
-              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
-                <CheckCircle className="w-6 h-6 text-yellow-600" />
+            <div className="bg-background border-2 border-border rounded-2xl p-8">
+              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+                <CheckCircle className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Faster Decisions</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Faster Decisions</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 When everyone has the same trusted data, decisions happen faster without endless reconciliation meetings.
               </p>
             </div>
@@ -278,49 +278,49 @@ export default function Solutions() {
       </section>
 
       {/* Which Tier for Your Department */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Which DataWorks Tier is Right for You?
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link to="/products" className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">DataWorks: BI</h3>
-              <p className="text-blue-600 font-semibold mb-4">Best for: Reporting & Dashboards</p>
-              <ul className="space-y-2 text-sm text-slate-600 mb-6">
+            <Link to="/products" className="bg-gradient-to-br from-blue-500/10 to-background border-2 border-blue-500/30 rounded-2xl p-8 hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-bold text-foreground mb-3">DataWorks: BI</h3>
+              <p className="text-blue-500 font-semibold mb-4">Best for: Reporting & Dashboards</p>
+              <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                 <li>✓ Finance reporting & reconciliation</li>
                 <li>✓ Operations dashboards</li>
                 <li>✓ HR metrics & compliance</li>
                 <li>✓ Sales pipeline visibility</li>
               </ul>
-              <div className="text-yellow-600 font-semibold">Learn more →</div>
+              <div className="text-primary font-semibold">Learn more →</div>
             </Link>
 
-            <Link to="/products" className="bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-200 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">DataWorks: MI</h3>
-              <p className="text-emerald-600 font-semibold mb-4">Best for: Planning & Forecasting</p>
-              <ul className="space-y-2 text-sm text-slate-600 mb-6">
+            <Link to="/products" className="bg-gradient-to-br from-emerald-500/10 to-background border-2 border-emerald-500/30 rounded-2xl p-8 hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-bold text-foreground mb-3">DataWorks: MI</h3>
+              <p className="text-emerald-500 font-semibold mb-4">Best for: Planning & Forecasting</p>
+              <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                 <li>✓ Budget planning & scenarios</li>
                 <li>✓ Demand forecasting</li>
                 <li>✓ Workforce planning</li>
                 <li>✓ Revenue forecasting</li>
               </ul>
-              <div className="text-yellow-600 font-semibold">Learn more →</div>
+              <div className="text-primary font-semibold">Learn more →</div>
             </Link>
 
-            <Link to="/products" className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">DataWorks: AI</h3>
-              <p className="text-yellow-600 font-semibold mb-4">Best for: AI & Automation</p>
-              <ul className="space-y-2 text-sm text-slate-600 mb-6">
+            <Link to="/products" className="bg-gradient-to-br from-primary/10 to-background border-2 border-primary/30 rounded-2xl p-8 hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-bold text-foreground mb-3">DataWorks: AI</h3>
+              <p className="text-primary font-semibold mb-4">Best for: AI & Automation</p>
+              <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                 <li>✓ Predictive analytics</li>
                 <li>✓ Anomaly detection</li>
                 <li>✓ Lead scoring</li>
                 <li>✓ Process automation</li>
               </ul>
-              <div className="text-yellow-600 font-semibold">Learn more →</div>
+              <div className="text-primary font-semibold">Learn more →</div>
             </Link>
           </div>
         </div>

@@ -61,12 +61,12 @@ export default function Blog() {
         description="Expert perspectives on data governance, analytics, AI, and more."
       />
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           {/* Featured Post */}
           <div className="mb-16">
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-12 md:p-16">
-              <span className="inline-block bg-yellow-500 text-slate-900 text-sm font-semibold px-4 py-2 rounded-full mb-6">
+              <span className="inline-block bg-yellow-500 text-foreground text-sm font-semibold px-4 py-2 rounded-full mb-6">
                 Featured
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -76,7 +76,7 @@ export default function Blog() {
                 We're building a library of articles, guides, and insights to help you get the most
                 from your data. Check back soon for our first posts.
               </p>
-              <button className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
+              <button className="bg-background text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition-colors">
                 Subscribe for Updates
               </button>
             </div>
@@ -84,7 +84,7 @@ export default function Blog() {
 
           {/* Blog Grid */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">Latest Articles</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-8">Latest Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
                 <BlogPostCard key={post.id} {...post} />
@@ -93,13 +93,13 @@ export default function Blog() {
           </div>
 
           {/* Coming Soon Notice */}
-          <div className="text-center bg-slate-50 rounded-2xl p-12 border-2 border-slate-200">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">More Content Coming Soon</h3>
-            <p className="text-slate-600 max-w-2xl mx-auto mb-6">
+          <div className="text-center bg-secondary/30 rounded-2xl p-12 bg-background border border-border">
+            <h3 className="text-2xl font-bold text-foreground mb-4">More Content Coming Soon</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
               We're working on comprehensive guides, case studies, and insights. Subscribe to our
               newsletter to be notified when new content is published.
             </p>
-                <button className="bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+                <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                   Subscribe to Newsletter
                 </button>
           </div>
@@ -107,15 +107,15 @@ export default function Blog() {
       </section>
 
       {/* Categories */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">Browse by Topic</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Browse by Topic</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {['Data Governance', 'Strategy', 'Best Practices', 'Technology', 'AI & ML', 'Leadership'].map(
               (category) => (
                 <button
                   key={category}
-                  className="bg-white border-2 border-slate-200 rounded-lg px-4 py-3 text-center font-semibold text-slate-900 hover:border-yellow-500 hover:text-yellow-600 transition-colors"
+                  className="bg-background bg-background border border-border rounded-lg px-4 py-3 text-center font-semibold text-foreground hover:border-yellow-500 hover:text-yellow-600 transition-colors"
                 >
                   {category}
                 </button>

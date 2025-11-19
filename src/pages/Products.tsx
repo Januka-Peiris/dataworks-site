@@ -18,14 +18,14 @@ export default function Products() {
       />
 
       {/* Value Proposition Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 One Platform for Your Entire Data Journey
               </h2>
-              <p className="text-xl text-slate-600 leading-relaxed mb-8">
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                 DataWorks isn't just another data tool. It's a complete, governed platform that 
                 evolves with your organisation — from basic reporting to advanced AI.
               </p>
@@ -33,66 +33,66 @@ export default function Products() {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Start Where You Are</div>
-                    <div className="text-slate-600">Begin with BI, add capabilities as you grow</div>
+                    <div className="font-semibold text-foreground mb-1">Start Where You Are</div>
+                    <div className="text-muted-foreground">Begin with BI, add capabilities as you grow</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Fully Managed</div>
-                    <div className="text-slate-600">We handle infrastructure, you focus on insights</div>
+                    <div className="font-semibold text-foreground mb-1">Fully Managed</div>
+                    <div className="text-muted-foreground">We handle infrastructure, you focus on insights</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Built-In Governance</div>
-                    <div className="text-slate-600">Trust, lineage, and compliance from day one</div>
+                    <div className="font-semibold text-foreground mb-1">Built-In Governance</div>
+                    <div className="text-muted-foreground">Trust, lineage, and compliance from day one</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-3xl p-8">
+            <div className="bg-secondary/30 border-2 border-border rounded-3xl p-8">
               <div className="space-y-6">
-                <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-xl border-2 border-blue-200">
+                <div className="flex items-center gap-4 p-4 bg-blue-500/10 rounded-xl border-2 border-blue-500/30">
                   <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Database className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-bold text-slate-900">DataWorks: BI</div>
-                    <div className="text-sm text-slate-600">Trusted reporting foundation</div>
+                    <div className="font-bold text-foreground">DataWorks: BI</div>
+                    <div className="text-sm text-muted-foreground">Trusted reporting foundation</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 pl-8">
-                  <ArrowRight className="w-6 h-6 text-slate-400" />
-                  <div className="text-slate-600">Add when ready</div>
+                  <ArrowRight className="w-6 h-6 text-muted-foreground" />
+                  <div className="text-muted-foreground">Add when ready</div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl border-2 border-emerald-200">
+                <div className="flex items-center gap-4 p-4 bg-emerald-500/10 rounded-xl border-2 border-emerald-500/30">
                   <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-bold text-slate-900">DataWorks: MI</div>
-                    <div className="text-sm text-slate-600">Predictive intelligence</div>
+                    <div className="font-bold text-foreground">DataWorks: MI</div>
+                    <div className="text-sm text-muted-foreground">Predictive intelligence</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 pl-8">
-                  <ArrowRight className="w-6 h-6 text-slate-400" />
-                  <div className="text-slate-600">Scale to AI</div>
+                  <ArrowRight className="w-6 h-6 text-muted-foreground" />
+                  <div className="text-muted-foreground">Scale to AI</div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-yellow-50 rounded-xl border-2 border-yellow-200">
-                  <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-4 p-4 bg-primary/10 rounded-xl border-2 border-primary/30">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="font-bold text-slate-900">DataWorks: AI</div>
-                    <div className="text-sm text-slate-600">Safe, governed AI at scale</div>
+                    <div className="font-bold text-foreground">DataWorks: AI</div>
+                    <div className="text-sm text-muted-foreground">Safe, governed AI at scale</div>
                   </div>
                 </div>
               </div>
@@ -101,25 +101,25 @@ export default function Products() {
 
           {/* Who Uses What */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-8">
-              <Users className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">For Every Team</h3>
-              <p className="text-slate-600 mb-4">Finance, Ops, HR, Execs — everyone gets trusted data</p>
-              <div className="text-sm text-blue-600 font-semibold">→ DataWorks: BI</div>
+            <div className="bg-blue-500/10 border-2 border-blue-500/30 rounded-2xl p-8">
+              <Users className="w-12 h-12 text-blue-500 mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">For Every Team</h3>
+              <p className="text-muted-foreground mb-4">Finance, Ops, HR, Execs — everyone gets trusted data</p>
+              <div className="text-sm text-blue-500 font-semibold">→ DataWorks: BI</div>
             </div>
 
-            <div className="bg-emerald-50 border-2 border-emerald-200 rounded-2xl p-8">
-              <Building className="w-12 h-12 text-emerald-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">For Strategic Teams</h3>
-              <p className="text-slate-600 mb-4">FP&A, Strategy, Planning — deep insights and forecasting</p>
-              <div className="text-sm text-emerald-600 font-semibold">→ DataWorks: MI</div>
+            <div className="bg-emerald-500/10 border-2 border-emerald-500/30 rounded-2xl p-8">
+              <Building className="w-12 h-12 text-emerald-500 mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">For Strategic Teams</h3>
+              <p className="text-muted-foreground mb-4">FP&A, Strategy, Planning — deep insights and forecasting</p>
+              <div className="text-sm text-emerald-500 font-semibold">→ DataWorks: MI</div>
             </div>
 
-            <div className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-8">
-              <Cpu className="w-12 h-12 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-3">For Innovation Teams</h3>
-              <p className="text-slate-600 mb-4">AI/ML, Innovation Labs — safe AI deployment at scale</p>
-              <div className="text-sm text-yellow-600 font-semibold">→ DataWorks: AI</div>
+            <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
+              <Cpu className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">For Innovation Teams</h3>
+              <p className="text-muted-foreground mb-4">AI/ML, Innovation Labs — safe AI deployment at scale</p>
+              <div className="text-sm text-primary font-semibold">→ DataWorks: AI</div>
             </div>
           </div>
         </div>
@@ -244,58 +244,58 @@ export default function Products() {
       <PillarLegend />
 
       {/* Use Cases Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Real-World Use Cases
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               See how organisations use each tier to solve specific challenges
             </p>
           </div>
 
           <div className="space-y-8">
             {/* BI Use Cases */}
-            <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-blue-500/10 to-background border-2 border-blue-500/30 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <Database className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-900">DataWorks: BI Use Cases</h3>
-                  <p className="text-blue-600">Building trust in your data</p>
+                  <h3 className="text-2xl font-bold text-foreground">DataWorks: BI Use Cases</h3>
+                  <p className="text-blue-500">Building trust in your data</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <div className="font-semibold text-slate-900 mb-2">Executive Dashboards</div>
-                  <div className="text-sm text-slate-600 mb-3">Real-time KPIs everyone trusts</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Executive Dashboards</div>
+                  <div className="text-sm text-muted-foreground mb-3">Real-time KPIs everyone trusts</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="trust" size="sm" />
                     <Tag theme="insight" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <div className="font-semibold text-slate-900 mb-2">Financial Reporting</div>
-                  <div className="text-sm text-slate-600 mb-3">Automated reconciliations & controls</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Financial Reporting</div>
+                  <div className="text-sm text-muted-foreground mb-3">Automated reconciliations & controls</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="trust" size="sm" />
                     <Tag theme="control" size="sm" />
                     <Tag theme="speed" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <div className="font-semibold text-slate-900 mb-2">Operational Analytics</div>
-                  <div className="text-sm text-slate-600 mb-3">Monitor performance across teams</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Operational Analytics</div>
+                  <div className="text-sm text-muted-foreground mb-3">Monitor performance across teams</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="insight" size="sm" />
                     <Tag theme="control" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-blue-200">
-                  <div className="font-semibold text-slate-900 mb-2">Customer Analytics</div>
-                  <div className="text-sm text-slate-600 mb-3">Unified view of customer data</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Customer Analytics</div>
+                  <div className="text-sm text-muted-foreground mb-3">Unified view of customer data</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="trust" size="sm" />
                     <Tag theme="insight" size="sm" />
@@ -305,43 +305,43 @@ export default function Products() {
             </div>
 
             {/* MI Use Cases */}
-            <div className="bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-200 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-emerald-500/10 to-background border-2 border-emerald-500/30 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-900">DataWorks: MI Use Cases</h3>
-                  <p className="text-emerald-600">Understanding what drives your business</p>
+                  <h3 className="text-2xl font-bold text-foreground">DataWorks: MI Use Cases</h3>
+                  <p className="text-emerald-500">Understanding what drives your business</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                  <div className="font-semibold text-slate-900 mb-2">Budget Planning</div>
-                  <div className="text-sm text-slate-600 mb-3">Scenario modeling & forecasting</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Budget Planning</div>
+                  <div className="text-sm text-muted-foreground mb-3">Scenario modeling & forecasting</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="insight" size="sm" />
                     <Tag theme="intelligence" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                  <div className="font-semibold text-slate-900 mb-2">Sales Performance</div>
-                  <div className="text-sm text-slate-600 mb-3">Driver-based analysis of revenue</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Sales Performance</div>
+                  <div className="text-sm text-muted-foreground mb-3">Driver-based analysis of revenue</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="insight" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                  <div className="font-semibold text-slate-900 mb-2">Cost Optimization</div>
-                  <div className="text-sm text-slate-600 mb-3">Identify cost drivers & savings</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Cost Optimization</div>
+                  <div className="text-sm text-muted-foreground mb-3">Identify cost drivers & savings</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="insight" size="sm" />
                     <Tag theme="speed" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-emerald-200">
-                  <div className="font-semibold text-slate-900 mb-2">Demand Forecasting</div>
-                  <div className="text-sm text-slate-600 mb-3">Predict future trends & needs</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Demand Forecasting</div>
+                  <div className="text-sm text-muted-foreground mb-3">Predict future trends & needs</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="insight" size="sm" />
                     <Tag theme="intelligence" size="sm" />
@@ -351,44 +351,44 @@ export default function Products() {
             </div>
 
             {/* AI Use Cases */}
-            <div className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-primary/10 to-background border-2 border-primary/30 rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-900">DataWorks: AI Use Cases</h3>
-                  <p className="text-yellow-600">Scaling AI safely across your organisation</p>
+                  <h3 className="text-2xl font-bold text-foreground">DataWorks: AI Use Cases</h3>
+                  <p className="text-primary">Scaling AI safely across your organisation</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white rounded-lg p-4 border border-yellow-200">
-                  <div className="font-semibold text-slate-900 mb-2">Anomaly Detection</div>
-                  <div className="text-sm text-slate-600 mb-3">Automatically spot unusual patterns</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Anomaly Detection</div>
+                  <div className="text-sm text-muted-foreground mb-3">Automatically spot unusual patterns</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="intelligence" size="sm" />
                     <Tag theme="security" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-yellow-200">
-                  <div className="font-semibold text-slate-900 mb-2">Predictive Maintenance</div>
-                  <div className="text-sm text-slate-600 mb-3">Prevent issues before they happen</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Predictive Maintenance</div>
+                  <div className="text-sm text-muted-foreground mb-3">Prevent issues before they happen</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="intelligence" size="sm" />
                     <Tag theme="insight" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-yellow-200">
-                  <div className="font-semibold text-slate-900 mb-2">Customer Churn</div>
-                  <div className="text-sm text-slate-600 mb-3">Predict & prevent customer loss</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Customer Churn</div>
+                  <div className="text-sm text-muted-foreground mb-3">Predict & prevent customer loss</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="intelligence" size="sm" />
                     <Tag theme="insight" size="sm" />
                   </div>
                 </div>
-                <div className="bg-white rounded-lg p-4 border border-yellow-200">
-                  <div className="font-semibold text-slate-900 mb-2">Process Automation</div>
-                  <div className="text-sm text-slate-600 mb-3">AI-powered workflow automation</div>
+                <div className="bg-secondary/50 rounded-lg p-4 border border-border">
+                  <div className="font-semibold text-foreground mb-2">Process Automation</div>
+                  <div className="text-sm text-muted-foreground mb-3">AI-powered workflow automation</div>
                   <div className="flex flex-wrap gap-1">
                     <Tag theme="intelligence" size="sm" />
                     <Tag theme="speed" size="sm" />
@@ -503,13 +503,13 @@ export default function Products() {
       </section>
 
       {/* Integration Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Integrates With Your Existing Stack
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               DataWorks connects seamlessly with your current tools and data sources
             </p>
           </div>
@@ -519,8 +519,8 @@ export default function Products() {
               'Databases', 'Cloud Storage', 'SaaS Apps', 'ERPs',
               'CRMs', 'Marketing Tools', 'BI Tools', 'Data Warehouses'
             ].map((integration) => (
-              <div key={integration} className="bg-white border-2 border-slate-200 rounded-xl p-6 text-center hover:shadow-lg hover:border-emerald-300 transition-all">
-                <div className="font-semibold text-slate-900">{integration}</div>
+              <div key={integration} className="bg-background border-2 border-border rounded-xl p-6 text-center hover:shadow-lg hover:border-primary/50 transition-all">
+                <div className="font-semibold text-foreground">{integration}</div>
               </div>
             ))}
           </div>

@@ -12,17 +12,17 @@ export default function About() {
       />
 
       {/* Company Story */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Story</h2>
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+          <h2 className="text-4xl font-bold text-foreground mb-6">Our Story</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
               At Assured Insights, we believe data should be an enabler, not an obstacle. Too many
               organisations struggle with fragmented systems, inconsistent metrics, and a lack of trust
               in their data.
             </p>
             <p>
-              That's why we created <strong>DataWorks</strong> — a complete, governed data platform
+              That's why we created <strong className="text-foreground">DataWorks</strong> — a complete, governed data platform
               that brings together truth, insight, and intelligence in one unified solution.
             </p>
             <p>
@@ -34,52 +34,52 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Values</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Our Values</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The principles that guide everything we do
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <Target className="w-8 h-8 text-blue-600" />
+            <div className="bg-background rounded-2xl p-8 border border-border shadow-lg">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Target className="w-8 h-8 text-blue-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Outcome-First</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Outcome-First</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 We focus on delivering business value, not just technical solutions.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-emerald-100 rounded-xl flex items-center justify-center mb-6">
-                <Users className="w-8 h-8 text-emerald-600" />
+            <div className="bg-background rounded-2xl p-8 border border-border shadow-lg">
+              <div className="w-16 h-16 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Users className="w-8 h-8 text-emerald-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Partnership</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Partnership</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 We work alongside your team, sharing knowledge and building capabilities.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
-                <Heart className="w-8 h-8 text-yellow-600" />
+            <div className="bg-background rounded-2xl p-8 border border-border shadow-lg">
+              <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                <Heart className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Trust</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Trust</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Everything we build is governed, traceable, and audit-ready from day one.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-                <Zap className="w-8 h-8 text-purple-600" />
+            <div className="bg-background rounded-2xl p-8 border border-border shadow-lg">
+              <div className="w-16 h-16 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Zap className="w-8 h-8 text-purple-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Speed</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-foreground mb-3">Speed</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 We deliver results in 100 days, not 6 months. Time to value matters.
               </p>
             </div>
@@ -88,18 +88,18 @@ export default function About() {
       </section>
 
       {/* Data Engineering as a Service - 20% focus */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-3xl p-12 md:p-16">
+          <div className="bg-gradient-to-br from-secondary/50 to-background border-2 border-border rounded-3xl p-12 md:p-16">
             <div className="max-w-4xl mx-auto">
               <div className="mb-8">
-                <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                <span className="inline-block bg-emerald-500/20 text-emerald-500 text-sm font-semibold px-4 py-2 rounded-full mb-4">
                   Additional Services
                 </span>
-                <h2 className="text-4xl font-bold text-slate-900 mb-6">
+                <h2 className="text-4xl font-bold text-foreground mb-6">
                   Data Engineering as a Service
                 </h2>
-                <p className="text-xl text-slate-600 leading-relaxed mb-8">
+                <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Need a dedicated data engineering team? We offer data engineering-as-a-service to
                   complement DataWorks or support custom data initiatives.
                 </p>
@@ -107,8 +107,8 @@ export default function About() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3">What We Offer</h3>
-                  <ul className="space-y-3 text-slate-600">
+                  <h3 className="text-lg font-bold text-foreground mb-3">What We Offer</h3>
+                  <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">✓</span>
                       <span>Highly specialised data engineers</span>
@@ -129,8 +129,8 @@ export default function About() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3">Benefits</h3>
-                  <ul className="space-y-3 text-slate-600">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Benefits</h3>
+                  <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">✓</span>
                       <span>Cost of one FTE for a full team</span>
@@ -152,7 +152,7 @@ export default function About() {
               </div>
 
               <div className="text-center">
-                <button className="bg-slate-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-slate-800 transition-colors">
+                <button className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors">
                   Learn More About Our Services
                 </button>
               </div>
@@ -162,17 +162,17 @@ export default function About() {
       </section>
 
       {/* Team Section - Scaffold */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">Our Team</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Our Team</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Data experts, engineers, and strategists dedicated to your success
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-12 text-center border-2 border-slate-200">
-            <p className="text-slate-500 text-lg">
+          <div className="bg-background rounded-2xl p-12 text-center border-2 border-border">
+            <p className="text-muted-foreground text-lg">
               Team profiles coming soon. Meet the experts behind DataWorks.
             </p>
           </div>

@@ -5,7 +5,7 @@ const tiers = [
   {
     name: 'DataWorks: BI',
     subtitle: 'Truth',
-    description: 'Clean, consistent, governed data powering trusted dashboards.',
+    description: 'Get trusted dashboards and reports powered by clean, consistent, and governed data.',
     color: 'blue',
     colorClass: 'from-blue-500 to-blue-600',
     borderColor: 'border-blue-500/20',
@@ -13,22 +13,22 @@ const tiers = [
     icon: Database,
     capabilities: [
       { text: 'Connect all your data sources — CRM, finance, marketing, operations', tags: ['trust' as TagTheme, 'speed' as TagTheme] },
-      { text: 'Single source of truth with certified KPIs everyone trusts', tags: ['trust' as TagTheme, 'control' as TagTheme] },
-      { text: 'Automated quality checks catch issues before they reach executives', tags: ['trust' as TagTheme, 'speed' as TagTheme, 'security' as TagTheme] },
-      { text: 'Complete lineage & reconciliations for audit-ready reporting', tags: ['trust' as TagTheme, 'control' as TagTheme] },
-      { text: 'Self-service dashboards for business users — no coding required', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Create a single source of truth with certified KPIs everyone trusts', tags: ['trust' as TagTheme, 'control' as TagTheme] },
+      { text: 'Automate data quality checks to catch issues before they reach executives', tags: ['trust' as TagTheme, 'speed' as TagTheme, 'security' as TagTheme] },
+      { text: 'Generate audit-ready reports with complete lineage & reconciliations', tags: ['trust' as TagTheme, 'control' as TagTheme] },
+      { text: 'Empower business users with self-service dashboards — no coding required', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
     ],
     outcomes: [
-      'Reports in minutes, not weeks',
-      'Everyone speaks the same data language',
-      'Eliminate reporting chaos',
-      'Pass audits with confidence',
+      'Reduce reporting time from weeks to minutes',
+      'Align the entire business on the same data',
+      'Eliminate reporting errors and chaos',
+      'Pass audits with confidence and ease',
     ],
   },
   {
     name: 'DataWorks: MI',
     subtitle: 'Insight',
-    description: 'Driver-based models to understand why performance changes.',
+    description: 'Leverage driver-based models to understand why performance changes.',
     color: 'emerald',
     colorClass: 'from-emerald-500 to-emerald-600',
     borderColor: 'border-emerald-500/20',
@@ -36,22 +36,22 @@ const tiers = [
     icon: TrendingUp,
     capabilities: [
       { text: 'Run what-if scenarios to predict business outcomes before committing', tags: ['insight' as TagTheme, 'intelligence' as TagTheme] },
-      { text: 'Driver-based modeling shows exactly what influences your metrics', tags: ['insight' as TagTheme] },
-      { text: 'Predictive re-forecasting adapts to changing conditions automatically', tags: ['insight' as TagTheme, 'intelligence' as TagTheme, 'speed' as TagTheme] },
-      { text: 'Variance analysis explains performance gaps instantly', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
-      { text: 'Reusable intelligence templates for consistent analysis', tags: ['insight' as TagTheme, 'speed' as TagTheme, 'control' as TagTheme] },
+      { text: 'Use driver-based modeling to see exactly what influences your metrics', tags: ['insight' as TagTheme] },
+      { text: 'Automatically adapt to changing conditions with predictive re-forecasting', tags: ['insight' as TagTheme, 'intelligence' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Instantly explain performance gaps with variance analysis', tags: ['insight' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Ensure consistent analysis with reusable intelligence templates', tags: ['insight' as TagTheme, 'speed' as TagTheme, 'control' as TagTheme] },
     ],
     outcomes: [
-      'Make better decisions faster',
-      'Understand performance drivers',
-      'Plan with confidence',
-      'Spot trends before competitors',
+      'Make smarter decisions, faster',
+      'Deeply understand your performance drivers',
+      'Plan and forecast with greater confidence',
+      'Identify trends before your competitors',
     ],
   },
   {
     name: 'DataWorks: AI',
     subtitle: 'Intelligence',
-    description: 'A safe, governed foundation to scale AI across the organisation.',
+    description: 'Build on a safe, governed foundation to scale AI across your business.',
     color: 'yellow',
     colorClass: 'from-yellow-400 to-yellow-500',
     borderColor: 'border-yellow-500/20',
@@ -59,16 +59,16 @@ const tiers = [
     icon: Sparkles,
     capabilities: [
       { text: 'Deploy AI safely with built-in guardrails and policy enforcement', tags: ['intelligence' as TagTheme, 'security' as TagTheme, 'control' as TagTheme] },
-      { text: 'Governed prompt inputs ensure consistent, trustworthy AI results', tags: ['intelligence' as TagTheme, 'trust' as TagTheme, 'security' as TagTheme] },
-      { text: 'Complete lineage tracks AI decisions for full transparency', tags: ['trust' as TagTheme, 'control' as TagTheme, 'security' as TagTheme] },
-      { text: 'Role-based access controls protect sensitive data at every level', tags: ['security' as TagTheme, 'control' as TagTheme] },
-      { text: 'ML-ready data products accelerate model development', tags: ['intelligence' as TagTheme, 'speed' as TagTheme] },
+      { text: 'Get consistent, trustworthy AI results with governed prompt inputs', tags: ['intelligence' as TagTheme, 'trust' as TagTheme, 'security' as TagTheme] },
+      { text: 'Track AI decisions with complete lineage for full transparency', tags: ['trust' as TagTheme, 'control' as TagTheme, 'security' as TagTheme] },
+      { text: 'Protect sensitive data at every level with role-based access controls', tags: ['security' as TagTheme, 'control' as TagTheme] },
+      { text: 'Accelerate model development with ML-ready data products', tags: ['intelligence' as TagTheme, 'speed' as TagTheme] },
     ],
     outcomes: [
-      'Scale AI confidently',
-      'Automate insights & workflows',
-      'Reduce regulatory risk',
-      'Gain competitive advantage',
+      'Scale AI with confidence and control',
+      'Automate insights and workflows',
+      'Minimize regulatory and compliance risks',
+      'Unlock a significant competitive advantage',
     ],
   },
 ];
@@ -79,10 +79,10 @@ export default function ProductTiers() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            Three Tiers. One Platform.
+            The DataWorks Platform
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Start with BI for trust, evolve to MI for insight, scale to AI for intelligence.
+            Start with BI for a single source of truth, evolve to MI for deep insights, and scale to AI for transformative intelligence.
           </p>
         </div>
 

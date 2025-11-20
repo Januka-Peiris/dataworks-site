@@ -1,24 +1,24 @@
-import { Target, Shield, FileCheck } from 'lucide-react';
+import { Zap, Shield, Scaling } from 'lucide-react';
 
 const pillars = [
   {
-    icon: Target,
-    title: 'Outcome-First',
-    description: 'We focus on decisions and workflows that matter most to your business, then align the platform to them.',
+    icon: Zap,
+    title: 'Speed to Insight',
+    description: 'Go from raw data to actionable insights in minutes, not months. DataWorks automates the heavy lifting so you can focus on what matters.',
     color: 'blue',
     gradient: 'from-blue-500 to-blue-600',
   },
   {
     icon: Shield,
-    title: 'Operationally Sound',
-    description: 'Reliable operations, clear ownership and strong governance so IT can support the business without running out.',
+    title: 'Unbreakable Trust',
+    description: 'Build confidence in your data with automated quality checks, data lineage, and a single source of truth for all your KPIs.',
     color: 'emerald',
     gradient: 'from-emerald-500 to-emerald-600',
   },
   {
-    icon: FileCheck,
-    title: 'Audit-Ready',
-    description: 'Traceable data journeys, consistent controls and reporting that stands up to scrutiny.',
+    icon: Scaling,
+    title: 'Scalable Control',
+    description: 'Get the control you need to manage data across the organization, with the scalability to grow as your business grows.',
     color: 'yellow',
     gradient: 'from-yellow-400 to-yellow-500',
   },
@@ -30,10 +30,10 @@ export default function WhyItMatters() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            Why it Matters
+            Why DataWorks?
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            Data is no longer a by-product — it's a strategic asset. But value only appears when you combine speed, trust and control. DataWorks brings these together so you can lead, not lag.
+            In today's market, data is your biggest asset. But it's not enough to just have data. You need to be able to use it. DataWorks gives you the speed, trust, and control you need to turn your data into a competitive advantage.
           </p>
         </div>
 
@@ -61,4 +61,3 @@ export default function WhyItMatters() {
     </section>
   );
 }
-

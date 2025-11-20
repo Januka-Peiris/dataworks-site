@@ -3,24 +3,24 @@ import { Heart, Shield, CheckCircle } from 'lucide-react';
 const stakeholders = [
   {
     icon: Heart,
-    title: 'Businesses Love',
-    description: 'Actionable insights, aligned KPIs, and trustworthy data that drive confident decision-making across the business.',
+    title: 'For Business Teams',
+    description: 'Get instant access to trusted data, automate reports, and make faster, smarter decisions. No more waiting for IT.',
     color: 'blue',
     gradient: 'from-blue-500 to-blue-600',
     bgGradient: 'from-blue-50 to-blue-100/50',
   },
   {
     icon: Shield,
-    title: 'IT Trust',
-    description: 'Secure, governed, scalable infrastructure managed end-to-end — reducing operational overhead.',
+    title: 'For Technology Leaders',
+    description: 'Deliver a secure, governed, and scalable data platform that reduces technical debt and frees up your team to focus on innovation.',
     color: 'emerald',
     gradient: 'from-emerald-500 to-emerald-600',
     bgGradient: 'from-emerald-50 to-emerald-100/50',
   },
   {
     icon: CheckCircle,
-    title: 'Auditors Approve',
-    description: 'Full lineage, compliance, controls and audit-ready transparency built directly into the platform.',
+    title: 'For Finance & Audit',
+    description: 'Ensure compliance with a fully auditable, transparent data platform. Pass audits with confidence and reduce risk.',
     color: 'yellow',
     gradient: 'from-yellow-400 to-yellow-500',
     bgGradient: 'from-yellow-50 to-yellow-100/50',
@@ -33,10 +33,10 @@ export default function StakeholderBenefits() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            Built for Everyone Who Matters
+            A Platform Everyone Can Rely On
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            DataWorks delivers value across your entire organisation
+            DataWorks is designed to meet the needs of every stakeholder, from the front line to the back office.
           </p>
         </div>
 
@@ -64,4 +64,3 @@ export default function StakeholderBenefits() {
     </section>
   );
 }
-

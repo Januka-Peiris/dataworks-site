@@ -5,24 +5,22 @@ import CTABanner from '../components/CTABanner';
 const pricingTiers = [
   {
     name: 'DataWorks: BI',
-    subtitle: 'Truth',
+    subtitle: 'For teams that need a single source of truth.',
     description: 'Perfect for organisations needing trusted reporting and dashboards',
     price: '£1,250',
     period: '/month',
     color: 'blue',
     features: [
-      'Single source of truth',
-      'Certified KPIs and definitions',
-      'Automated data quality checks',
-      'Reconciliations & lineage',
-      'Standardised semantic layer',
-      'Trusted dashboards',
-      '24/7 support',
+      'Unlimited Users',
+      'Unlimited Dashboards',
+      'Connect to Any Data Source',
+      'Automated Data Quality Checks',
+      '24/7 Support',
     ],
   },
   {
     name: 'DataWorks: MI',
-    subtitle: 'Insight',
+    subtitle: 'For teams that need to understand what drives their business.',
     description: 'For teams requiring predictive analytics and scenario planning',
     price: '£3,750',
     period: '/month',
@@ -30,29 +28,25 @@ const pricingTiers = [
     featured: true,
     features: [
       'Everything in BI, plus:',
-      'Driver modelling & assumption libraries',
-      'Scenario simulation',
-      'Predictive re-forecasting',
-      'Variance logic',
-      'Reusable intelligence templates',
-      'Priority support',
+      'Driver-Based Modeling',
+      'Scenario Planning',
+      'Predictive Forecasting',
+      'Priority Support',
     ],
   },
   {
     name: 'DataWorks: AI',
-    subtitle: 'Intelligence',
+    subtitle: 'For teams that want to scale AI with a safe, governed foundation.',
     description: 'Complete platform for safe, governed AI at scale',
     price: 'Custom',
     period: '',
     color: 'yellow',
     features: [
       'Everything in MI, plus:',
-      'AI guardrails & policy enforcement',
-      'Governed prompt inputs',
-      'Full data lineage',
-      'Access controls',
-      'ML-ready data products',
-      'Dedicated success manager',
+      'AI Guardrails',
+      'Governed Prompt Inputs',
+      'ML-Ready Data',
+      'Dedicated Success Manager',
     ],
   },
 ];
@@ -61,9 +55,9 @@ export default function Pricing() {
   return (
     <>
       <PageHeader
-        subtitle="Pricing"
-        title="Flexible Plans for Every Stage"
-        description="Start where you are. Scale when you're ready. Transparent pricing with no hidden fees."
+        subtitle="DataWorks Pricing"
+        title="Simple, Transparent Pricing"
+        description="Choose the plan that's right for you. All plans come with a 14-day free trial."
       />
 
       <section className="py-24 bg-background">
@@ -144,137 +138,40 @@ export default function Pricing() {
           <div className="mt-24 pt-24 border-t border-border">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                What's Included in Every Tier
+                All Plans Include
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                All DataWorks tiers include these powerful enterprise capabilities
-              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Unlimited Dashboards */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <BarChart3 className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Unlimited Dashboards</h3>
-                    <p className="text-sm text-muted-foreground">Create as many reports and dashboards as you need</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">Unlimited Users</h3>
+                <p className="text-sm text-muted-foreground">Invite your entire team to collaborate.</p>
               </div>
 
-              {/* Unlimited Data Sources */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Plug className="w-6 h-6 text-emerald-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Unlimited Data Sources</h3>
-                    <p className="text-sm text-muted-foreground">Connect to all your systems without limits</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">Unlimited Dashboards</h3>
+                <p className="text-sm text-muted-foreground">Create as many dashboards as you need.</p>
               </div>
 
-              {/* Automated Quality Monitoring */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-purple-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Automated Quality Monitoring</h3>
-                    <p className="text-sm text-muted-foreground">Continuous checks ensure data integrity</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">Connect to Any Data Source</h3>
+                <p className="text-sm text-muted-foreground">Connect to all your systems without limits.</p>
               </div>
 
-              {/* Cost Optimization Tools */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <DollarSign className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Cost Optimization Tools</h3>
-                    <p className="text-sm text-muted-foreground">See exactly where your budget goes</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">Automated Data Quality Checks</h3>
+                <p className="text-sm text-muted-foreground">Ensure your data is always accurate and reliable.</p>
               </div>
 
-              {/* API Creation Tools */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Code className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">API Creation Tools</h3>
-                    <p className="text-sm text-muted-foreground">Build data APIs without coding</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">24/7 Support</h3>
+                <p className="text-sm text-muted-foreground">Get help from our team of experts whenever you need it.</p>
               </div>
 
-              {/* 24/7 Support */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6 text-emerald-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">24/7 Expert Support</h3>
-                    <p className="text-sm text-muted-foreground">Always available when you need help</p>
-                  </div>
-                </div>
+              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6">
+                <h3 className="font-bold text-foreground mb-2">And much more...</h3>
+                <p className="text-sm text-muted-foreground">Contact us for a full list of features.</p>
               </div>
-
-              {/* Complete Data Lineage */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <ArrowRight className="w-6 h-6 text-purple-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Complete Data Lineage</h3>
-                    <p className="text-sm text-muted-foreground">Track data from source to report</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Self-Service Analytics */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Zap className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Self-Service Analytics</h3>
-                    <p className="text-sm text-muted-foreground">Empower users to explore data safely</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Managed Infrastructure */}
-              <div className="bg-secondary/30 border-2 border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">100% Managed Infrastructure</h3>
-                    <p className="text-sm text-muted-foreground">We handle all technical operations</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-muted-foreground text-lg">
-                <strong className="text-foreground">No hidden costs.</strong> No surprise usage charges. 
-                Everything you need is included.
-              </p>
             </div>
           </div>
 
@@ -318,9 +215,9 @@ export default function Pricing() {
 
       <CTABanner
         title="Ready to Get Started?"
-        description="Let's discuss your data needs and find the perfect DataWorks tier for your organisation."
-        primaryButtonText="Contact Sales"
-        secondaryButtonText="Schedule a Call"
+        description="Start your 14-day free trial today. No credit card required."
+        primaryButtonText="Start Your Free Trial"
+        secondaryButtonText="Contact Sales"
         variant="light"
       />
     </>

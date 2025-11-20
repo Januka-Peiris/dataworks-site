@@ -28,8 +28,8 @@ export default function Contact() {
     <>
       <PageHeader
         subtitle="Contact Us"
-        title="Let's Talk About Your Data"
-        description="Get in touch to learn how DataWorks can transform your organisation's data capabilities."
+        title="Get in Touch with the DataWorks Team"
+        description="We're here to help you get the most out of your data. Whether you have a question about our platform or want to see a demo, we'd love to hear from you."
       />
 
       <section className="py-24 bg-background">
@@ -72,36 +72,6 @@ export default function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-border bg-secondary rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-colors"
                     placeholder="john@company.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-foreground mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border bg-secondary rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-colors"
-                    placeholder="Your Company"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border bg-secondary rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition-colors"
-                    placeholder="+44 20 1234 5678"
                   />
                 </div>
 
@@ -162,7 +132,6 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Call Us</h3>
                     <p className="text-muted-foreground">+44 (0) 20 1234 5678</p>
-                    <p className="text-sm text-muted-foreground mt-1">Monday - Friday, 9am - 6pm GMT</p>
                   </div>
                 </div>
 
@@ -174,26 +143,8 @@ export default function Contact() {
                     <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
                     <p className="text-muted-foreground">
                       London, United Kingdom
-                      <br />
-                      <span className="text-sm text-muted-foreground">Office details available upon request</span>
                     </p>
                   </div>
-                </div>
-              </div>
-
-              {/* Quick Links */}
-              <div className="mt-12 pt-12 border-t border-border">
-                <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
-                <div className="space-y-3">
-                  <a href="/products" className="block text-primary hover:text-primary/80">
-                    Explore Products →
-                  </a>
-                  <a href="/pricing" className="block text-primary hover:text-primary/80">
-                    View Pricing →
-                  </a>
-                  <a href="/case-studies" className="block text-primary hover:text-primary/80">
-                    Read Case Studies →
-                  </a>
                 </div>
               </div>
             </div>
@@ -211,30 +162,28 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                How quickly can we get started?
+                What happens after I submit the form?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We can typically begin implementation within 2 weeks of initial contact. Our team works
-                to deliver value within the first 100 days.
+                One of our team members will get back to you within 24 hours to schedule a call.
               </p>
             </div>
 
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                Do you offer demos?
+                Do you offer a free trial?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Yes! We offer personalized demos tailored to your use case. Contact us to schedule one.
+                Yes! We offer a 14-day free trial of our DataWorks platform. You can sign up for a free trial on our pricing page.
               </p>
             </div>
 
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                What industries do you work with?
+                How can I get a demo?
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                DataWorks serves organisations across healthcare, finance, engineering, technology, and
-                more. Our platform is industry-agnostic.
+                You can schedule a demo by filling out the form on this page, or by visiting our pricing page.
               </p>
             </div>
           </div>
